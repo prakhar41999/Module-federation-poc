@@ -1,0 +1,18 @@
+.notification {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 100;
+  animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}

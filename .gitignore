@@ -1,0 +1,4 @@
+**/node_modules
+/module-federation-examples
+/.cursor
+/.vscode

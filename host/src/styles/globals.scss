@@ -1,0 +1,177 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@reference "tailwindcss"; // Add this line
+
+@import "@dgplatform/ioc-components/@ioc-ui-library/esm/index.css";
+
+:root {
+	--n-neutral-700: #5e698e;
+	--n-neutral-30040: rgba(190, 220, 243, 0.4);
+	--n-neutral-25040: rgba(203, 208, 218, 0.4);
+
+	--pisa_blue_600: #005491;
+}
+@layer base {
+	@font-face {
+		font-family: "Olympic-Headline";
+		src: url("../public/assests/fonts/OlympicHeadline-Regular.ttf");
+		font-display: swap;
+	}
+
+	$pisa-blue-400: rgb(65 18 255 / var(--tw-border-opacity));
+	$n-neutral-200: "#E6EBF2";
+
+	[type="radio"]:checked {
+		background-color: var(--pisa-blue-400);
+	}
+
+	[type="checkbox"]:focus + div {
+		outline: 2px solid var(--pisa-blue-400) !important;
+		outline-offset: 0px !important;
+	}
+
+	.forminput--error__message {
+		@apply text-pretty max-w-80;
+	}
+
+	[type="text"] {
+		padding-top: initial;
+		padding-right: initial;
+		padding-bottom: initial;
+		padding-left: initial;
+		font-size: 14px;
+	}
+}
+
+.badge__label--hidden > span > span.rounded-full.text_style_body_300 {
+	display: none;
+}
+
+.badge__label--hidden > span {
+	padding-right: 0.25rem;
+}
+
+.badge__label > span > span.rounded-full.text_style_body_300,
+.text_style_body_400 {
+	@apply font-semibold text-ten leading-eighteen tracking-text;
+}
+
+#input-field {
+	@apply flex-grow w-1/2 h-10 text-n_neutral_900 font-inter text-xs border-0 outline-0;
+}
+
+[type="text"]:focus,
+[type="email"]:focus,
+[type="url"]:focus,
+[type="password"]:focus,
+[type="number"]:focus,
+[type="date"]:focus,
+[type="datetime-local"]:focus,
+[type="month"]:focus,
+[type="search"]:focus,
+[type="tel"]:focus,
+[type="time"]:focus,
+[type="week"]:focus,
+[multiple]:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+	outline-offset: 0;
+	--tw-ring-inset: initial;
+	--tw-ring-offset-width: initial;
+	--tw-ring-offset-color: initial;
+	--tw-ring-color: initial;
+	--tw-ring-offset-shadow: initial;
+	--tw-ring-shadow: initial;
+	box-shadow: none;
+	border-color: initial;
+}
+
+.Toastify__toast-body {
+	padding: 0px !important;
+}
+
+.Toastify__toast {
+	padding: 0px !important;
+	box-shadow: 0px 0px 0px !important;
+	background: transparent !important;
+
+	div[role="alert"] {
+		height: auto;
+
+		div:nth-child(1) {
+			height: auto;
+			align-self: normal;
+		}
+
+		div:nth-child(2) > svg {
+			flex-shrink: 0;
+		}
+
+		div:nth-child(3) > div > div {
+			align-self: center;
+		}
+	}
+}
+
+.rdrDefinedRangesWrapper {
+	display: none;
+}
+
+.rdrDateRangeWrapper {
+	width: 100%;
+}
+
+#userPermissionDropdown > div {
+	width: "310px";
+}
+
+.home--page button {
+	padding-left: 75px;
+	padding-right: 75px;
+}
+
+nav:has(> ul.tracking-text) {
+	display: none;
+}
+
+.subsciptions--dropdown button {
+	font-weight: 500;
+	color: #647096;
+}
+
+#datepicker {
+	@apply px-10 py-2 text-sm rounded border-solid border-2 border-n_neutral_200 hover:border-ne_neutral_300 focus:border-[#4112FF] focus-within:border-borderFocus focus-within:hover:border-borderFocus outline-none box-border placeholder:text-n_neutral_600 text-n_neutral_800;
+}
+
+#enableScrollBarInDisabledForm > div div[role="menu"] {
+	pointer-events: auto;
+}
+
+/* React JSON View Compare library styles */
+.c-json-view {
+	font-size: 14px !important;
+	background: none !important;
+	padding-top: 0px !important;
+}
+
+.c-json-mark {
+	font-size: 14px !important;
+}
+
+.c-json-content {
+	font-size: 14px !important;
+}
+
+.c-json-key {
+	font-size: 14px !important;
+}
+
+.c-json-line {
+	font-size: 14px !important;
+}
+
+.ReactFlagsSelect-module_flagsSelect__2pfa2 {
+	@apply pb-0 !important;
+}

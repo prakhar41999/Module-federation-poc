@@ -1,0 +1,18 @@
+export const storageKey = {
+    CONFIG_BASE_PATH: 'config-basePath',
+    CONFIG_TENANT_ID: 'config-tenantId',
+    CONFIG_LOGICAL_ENVIRONMENT: 'config-logicalEnvironment',
+    CONFIG_DISPATCHER_URL: 'config-dispatcherUrl',
+    CONFIG_COD_URL: 'config-codUrl',
+    CONFIG_OEM_URL: 'config-oemUrl',
+    CONFIG_LOGOUT: 'config-logout',
+    SELECTED_DOC_TYPE: 'selectedDocType',
+    FILTER_OPTION_PREFIX: `filterOptions_`,
+    FILTER_APPLIED_ON_PREFIX: `FilterAppliedOn_`,
+    SIDEBAR_STATE: 'sidebarState',
+    VISIBLE_COLUMNS: 'visibleColumns',
+    CONFIG_ENV_MANAGER_URL: 'config-envManagerUrl',
+    CONFIG_VENGINE_API_URL: 'config-vengineApiUrl',
+    CONFIG_PUSH_NOTIFICATION_URL: 'config-pushNotificationUrl',
+    CONFIG_PUSH_NOTIFICATION_API_KEY: 'config-pushNotificationApiKey',
+};
