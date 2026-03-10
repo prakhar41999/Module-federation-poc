@@ -6,6 +6,7 @@ export default createModuleFederationConfig({
         generateTypes: false,
         consumeTypes: false,
     },
+    filename: 'static/chunks/remoteEntry.js',
     exposes: {
         './app': './app/page.tsx',
     }

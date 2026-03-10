@@ -24,8 +24,9 @@ const nextConfig: NextConfig = {
 
         ];
     },
-    turbopack: {},
     webpack: (config) => {
+        config.output = config.output || {};
+        config.output.uniqueName = 'dtec_app1';
         config.plugins.push(new ModuleFederationPlugin(mfConfig));
         return config;
     },
